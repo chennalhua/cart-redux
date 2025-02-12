@@ -1,0 +1,50 @@
+.logo {
+  background: url("../../../public/images/logo/logo.png") no-repeat center;
+  a {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+}
+
+.mobile-cart {
+  display: block;
+  position: relative;
+  span {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: $primary;
+    color: $light;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.mobile-nav {
+  ul {
+    background: #707070;
+    li {
+      display: block;
+      width: 100%;
+      border-top: 1px solid #fff;
+      font-size: 20px;
+      padding: 8px 0;
+    }
+  }
+}
+
+footer {
+  .sub-area {
+    height: 600px;
+    background: url("../../../public/images/banner/banner-5.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .sub-info {
+    margin-top: 300px;
+  }
+}

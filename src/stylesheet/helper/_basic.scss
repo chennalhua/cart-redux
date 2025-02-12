@@ -17,10 +17,9 @@ span {
     font-weight: 600 !important;
 }
 
-body {
-    height: 100vh;
-    overflow-y: hidden;
-}
+// body {
+//     height: 100vh;
+// }
 
 input {
     border-width: 1.5px !important;
@@ -68,53 +67,4 @@ a {
 .img-fluid {
     max-width: 100%;
     height: auto;
-}
-
-//* 模板
-.template {
-    position: relative;
-    //-- 版型 -- 左(小)右(大)
-    &.basic { //.template-basic
-        display: flex;
-        @include view-md {
-            display: block;
-        }
-        &.active {
-            transition: all 0.3s linear;
-            .basic-small-box {
-                display: block;
-                @include view-md {
-                    width: 45%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-                @include view-sm {
-                    width: 60%;
-                }
-            }
-            .basic-big-box {
-                width: 100%;
-            }
-        }
-        &.close {
-            transition: all 0.3s linear;
-            .basic-small-box {
-                display: none;
-            }
-            .basic-big-box {
-                width: 100%;
-            }
-        }
-        .basic-small-box {
-            width: 25%;
-            z-index: 3;
-        }
-        .basic-big-box {
-            width: 75%;
-            @include view-md {
-                width: 100%;
-            }
-        }
-    }
 }

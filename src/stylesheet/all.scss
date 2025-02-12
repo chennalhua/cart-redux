@@ -17,12 +17,15 @@
     @include color;
 }
 
-@import "./helper/responsive";
-@import "./helper/basic.scss";
-@import "./helper/color";
+
 
 @layer base {
     //設定屬於在哪個 bucket
+    :root {
+        --color-primary: 255 115 179;
+        --color-secondary: 111 114 185;
+        /* ... */
+    }
     p,
     h3 {
         @apply dark:text-white;
@@ -33,6 +36,18 @@
 @layer utilities {
 }
 
-@import "./animation";
-@import "./component";
-@import "./antd";
+
+@import "~bootstrap/scss/functions";
+@import "./helper/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+@import "./helper/utilities";
+
+@import "./helper/color";
+@import "./helper/responsive";
+@import "./helper/basic.scss";
+
+@import "./components/layout";
+@import "./components/product";
+
+@import "./view/homePage";
